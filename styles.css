@@ -152,6 +152,7 @@ button {
 
 .login>span{
     color: #1186e6;
+    font-weight: bold;
 }
 
 input {
@@ -163,7 +164,16 @@ input {
 }
 
 .logo>img {
-    height: 75%;
-    width: 20%;
+    height: 85px;
+    width: 85px;
     filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(288deg) brightness(107%) contrast(101%);
+}
+
+input[type='password']:invalid {
+    border-color: rgb(117, 0, 0);
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #1186e6;
 }
