@@ -14,28 +14,46 @@
         </div>
         <div class="right-side">
             <div class="info">
-                <p>This is not a real online service! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sign up <em>now</em> to get started.</p>
+                <p>This is not a real online service! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore voluptate atque consequatur quod eveniet minima. Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form-container">
                 <form action="">
                     <legend>Let's do this!</legend>
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                    <label for="password-confirm">Confirm Password</label>
-                    <input type="password" name="password-confirm" id="password-confirm">
+                    <fieldset>
+                        <div class="data">
+                            <label for="firstname">First Name*</label>
+                            <input required type="text" id="firstname" name="firstname">
+                        </div>
+                        <div class="data">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="data">
+                            <label for="email">E-mail*</label>
+                            <input required type="email" id="email" name="email">
+                        </div>
+                        <div class="data">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="data">
+                            <label for="password">Password*</label>
+                            <input required type="password" name="password" id="password">
+                        </div>
+                        <div class="data">
+                            <label for="password-confirm">Confirm Password*</label>
+                            <input required type="password" name="password-confirm" id="password-confirm">
+                        </div>
+                    </fieldset>
                     <button type="submit">Create Account</button>
                 </form>
             </div>
-            <div class="login">Already have an account? Log in</div>
+            <div class="login">Already have an account? <span>Log in</span></div>
         </div>
     </div>
 </body>

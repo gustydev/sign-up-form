@@ -56,6 +56,7 @@ table {
     display: flex;
     min-height: 100vh;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .left-side {
@@ -70,6 +71,9 @@ table {
 .right-side {
     width: 60%;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .logo {
@@ -96,5 +100,64 @@ table {
 }
 
 em {
-    font-style: italic;
+    font-style: italic; 
+    /* css reset moment */
+}
+
+.info {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.info, .form-container, .login {
+    margin-left: 46px;
+    width: 80%;
+}
+
+legend {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button {
+    margin-top: 24px;
+    width: 200px;
+    padding: 12px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    background-color: #0A6BBD;
+}
+
+.login>span{
+    color: #1186e6;
+}
+
+input {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 4px;
+    padding: 4px;
 }
