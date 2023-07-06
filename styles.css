@@ -55,10 +55,11 @@ table {
 .main {
     display: flex;
     min-height: 100vh;
+    color: white;
 }
 
 .left-side {
-    width: 35%;
+    width: 40%;
     background-image: url('files/images/tianhao-wang-aME_eAFPU2A-unsplash.jpg');
     background-size: cover;
     display: flex;
@@ -67,20 +68,19 @@ table {
 }
 
 .right-side {
-    width: 65%;
+    width: 60%;
     background-color: black;
 }
 
-.banner {
-    font-size: 64px;
+.logo {
+    font-size: 86px;
     font-family: Megrim;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     width: 100%;
-    height: 10%;
+    height: 15%;
     background: rgba(0, 0, 0, 0.3);
     position: relative;
     top: 20%;
@@ -93,4 +93,8 @@ table {
     justify-content: center;
     color: rgb(187, 187, 187);
     font-size: 12px;
+}
+
+em {
+    font-style: italic;
 }
