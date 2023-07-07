@@ -155,7 +155,7 @@ button:hover {
     background-color: #03579c;
 }
 
-.login>span{
+.login>a{
     color: #1186e6;
     font-weight: bold;
 }
@@ -174,15 +174,19 @@ input {
 }
 
 input[type='password']:invalid {
-    border-color: rgb(117, 0, 0);
+    border-color: rgb(116, 0, 29);
 }
 
 input:focus {
     outline: none !important;
-    border-color: #1186e6;
+    border-color: #1186e6 !important;
 }
 
 .credits>a{
     color: rgb(187, 187, 187);
     margin-left: 3px;
+}
+
+.not-match {
+    color: rgb(190, 0, 48);
 }
