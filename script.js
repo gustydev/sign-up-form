@@ -17,11 +17,16 @@ createButton.addEventListener('click', (e) => {
 });
 
 passInputs.forEach((input) => {
-    input.addEventListener('change', () => {
+    input.addEventListener('input', () => {
         if (pass.value === passConfirm.value) {
             notMatch.textContent = '';
             passInputs.forEach((input) => {
                 input.style = 'border-color: rgb(53, 53, 53);'
+            })
+        } else {
+            notMatch.textContent = '* Passwords do not match.';
+            passInputs.forEach((input) => {
+                input.style = 'border-color: rgb(116, 0, 29);';
             })
         }
     })
